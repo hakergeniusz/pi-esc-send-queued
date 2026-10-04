@@ -1,0 +1,37 @@
+{
+	"name": "pi-esc-send-queued",
+	"version": "0.1.0",
+	"description": "Esc interrupts the model and sends the first queued follow-up message instead of dumping the whole queue back in the editor.",
+	"type": "module",
+	"license": "MIT",
+	"keywords": [
+		"pi",
+		"pi-package",
+		"interrupt",
+		"queue",
+		"follow-up"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hakergeniusz/pi-esc-send-queued.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hakergeniusz/pi-esc-send-queued/issues"
+	},
+	"homepage": "https://github.com/hakergeniusz/pi-esc-send-queued#readme",
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"scripts": {
+		"test": "bun test.ts",
+		"typecheck": "tsc --noEmit"
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"devDependencies": {
+		"@types/node": "^26.6.4"
+	}
+}
